@@ -1821,7 +1821,23 @@
 //   }
 // }
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen/your.dart';
+// import 'package:flutter_application_1/screen/task_screen.dart';
+import 'package:flutter_application_1/screen/home_screen.dart';
+// import 'package:flutter_application_1/screen/verify_screen.dart';
+// import 'package:flutter_application_1/screen/dialog_2_screen.dart';
+// import 'package:flutter_application_1/screen/dialog_1_screen.dart';
+// import 'package:flutter_application_1/screen/sign_in_screen.dart';
+// import 'package:flutter_application_1/screen/sign_up_screen.dart';
+// import 'package:flutter_application_1/screen/service_screen_3.dart';
+// import 'package:flutter_application_1/screen/service_screen_4.dart';
+// import 'package:flutter_application_1/screen/service_screen_3.dart';
+// import 'package:flutter_application_1/screen/service_screen_1.dart';
+// import 'package:flutter_application_1/screen/service_screen_2.dart';
+// import 'package:flutter_application_1/screen/splash.dart';
+// import 'package:flutter_application_1/signup_screen.dart';
+// import 'package:flutter_application_1/screen/flutter_screen.dart';
+ 
+// import 'package:flutter_application_1/screen/your.dart';
 // import 'package:flutter_application_1/act.dart';
 // import 'package:flutter_application_1/row.dart';
 // import 'package:flutter_application_1/margin.dart';
@@ -1859,8 +1875,22 @@ class MyApp extends StatelessWidget {
       // Roww(),
       // Act(),
       //  Wall(),
-      Your(),
+      // Your(),
+      // SignupPage2(),
       // DrawerPage(),
+      // Store(),
+      //  ServiceScreen1(),
+      // ServiceScreen2(),
+      // ServiceScreen3(),
+      // ServiceScreen3(),
+      // ServiceScreen4(),
+      // Sign_in(),
+      // Sign_up(),
+      // Dialog_1(),
+      // Dialog_2(),
+      // Verify(),
+       HomeScreen(),
+      // Task(),
     );
   }
 }
