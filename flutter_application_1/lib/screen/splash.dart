@@ -1,4 +1,5 @@
  import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/service_screen_1.dart';
  
 class  Store  extends StatelessWidget {
   const  Store ({super.key});
@@ -47,19 +48,26 @@ class  Store  extends StatelessWidget {
             ],
           ),
            SizedBox(height: 150,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('v   1.0.0',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-              
-              ),
-            ],
+         Row(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>  ServiceScreen1(),
           ),
+        );
+      },
+      child: const Icon(
+        Icons.arrow_forward,
+        color: Colors.white,
+        size: 24,
+      ),
+    ),
+  ],
+),
       
            
         ],

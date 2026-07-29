@@ -1,4 +1,5 @@
  import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/service_screen_3.dart';
  
 class  ServiceScreen2  extends StatelessWidget {
   const  ServiceScreen2 ({super.key});
@@ -35,14 +36,24 @@ class  ServiceScreen2  extends StatelessWidget {
           //  
      
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              CircleAvatar(
-                radius: 20,
-                child: Icon(Icons.arrow_forward),
-              ),
-            ],
+  mainAxisAlignment: MainAxisAlignment.end,
+  children: [
+    GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ServiceScreen3(),
           ),
+        );
+      },
+      child: const CircleAvatar(
+        radius: 20,
+        child: Icon(Icons.arrow_forward),
+      ),
+    ),
+  ],
+),
       
            
         ],

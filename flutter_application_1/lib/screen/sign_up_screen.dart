@@ -1,4 +1,7 @@
  import 'package:flutter/material.dart';
+ import 'package:flutter/gestures.dart';
+import 'package:flutter_application_1/screen/dialog_1_screen.dart';
+import 'package:flutter_application_1/screen/sign_in_screen.dart';
 //  import 'package:font_awesome_flutter/font_awesome_flutter.dart';
  
 class  Sign_up  extends StatelessWidget {
@@ -156,14 +159,21 @@ TextFormField(
     SizedBox(height: 20),
 
     // Sign In Button
-   SizedBox(
+  SizedBox(
   width: double.infinity,
   height: 55,
   child: ElevatedButton(
-    onPressed: () {},
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const Dialog_1(),
+        ),
+      );
+    },
     style: ElevatedButton.styleFrom(
-      backgroundColor: const Color(0xFF0EA5E9), // Button Background
-      foregroundColor: Colors.white, // Text & Icon Color
+      backgroundColor: const Color(0xFF0EA5E9),
+      foregroundColor: Colors.white,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
@@ -173,7 +183,7 @@ TextFormField(
       style: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.bold,
-        color: Colors.white, // Text Color
+        color: Colors.white,
       ),
     ),
   ),
@@ -182,11 +192,10 @@ TextFormField(
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: [
-    
     RichText(
-      text: const TextSpan(
+      text: TextSpan(
         children: [
-          TextSpan(
+          const TextSpan(
             text: "Don't have an account? ",
             style: TextStyle(
               color: Colors.white,
@@ -195,17 +204,26 @@ Row(
           ),
           TextSpan(
             text: "Sign In",
-            style: TextStyle(
+            style: const TextStyle(
               color: Color(0xFF0EA5E9),
               fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
+            recognizer: TapGestureRecognizer()
+              ..onTap = () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Sign_in(),
+                  ),
+                );
+              },
           ),
         ],
       ),
     ),
   ],
-)
+),
   ],
 ),
 // 

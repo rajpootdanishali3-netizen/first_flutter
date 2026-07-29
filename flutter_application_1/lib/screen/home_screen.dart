@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/calendar_screen.dart';
+import 'package:flutter_application_1/screen/setting_screen.dart';
+import 'package:flutter_application_1/screen/task_screen.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -452,51 +455,85 @@ class HomeScreen extends StatelessWidget {
 ),
                     const SizedBox(height: 5),
              
-             Container(
-               height: 75,
-               decoration: BoxDecoration(
-                 color: Colors.transparent,
-                 borderRadius: BorderRadius.circular(25),
-               ),
-               child: Row(
-                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                 children: [
-                   IconButton(
-                     onPressed: () {},
-                     icon: const Icon(
-                       Icons.home,
-                     color: Colors.white,
-                       size: 30,
-                     ),
-                   ),
-                   IconButton(
-                     onPressed: () {},
-                     icon: const Icon(
-                       Icons.task_alt,
-              color: Colors.white,
-                       size: 30,
-                     ),
-                   ),
-                   IconButton(
-                     onPressed: () {},
-                     icon: const Icon(
-                       Icons.calendar_month,
-              color: Colors.white,
-                       size: 30,
-                     ),
-                   ),
-                   IconButton(
-                     onPressed: () {},
-                     icon: const Icon(
-                       Icons.settings,
-                       color: Colors.white,
-                       size: 30,
-                     ),
-                   ),
-                 ],
-               ),
-             ),
-                    
+            Container(
+  height: 75,
+  decoration: BoxDecoration(
+    color: Colors.transparent,
+    borderRadius: BorderRadius.circular(25),
+  ),
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+      // Home
+      IconButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const HomeScreen(),
+            ),
+          );
+        },
+        icon: const Icon(
+          Icons.home,
+          color: Colors.white,
+          size: 30,
+        ),
+      ),
+
+      // Task
+      IconButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const  Task(),
+            ),
+          );
+        },
+        icon: const Icon(
+          Icons.task_alt,
+          color: Colors.white,
+          size: 30,
+        ),
+      ),
+
+      // Calendar
+      IconButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const Calendar(),
+            ),
+          );
+        },
+        icon: const Icon(
+          Icons.calendar_month,
+          color: Colors.white,
+          size: 30,
+        ),
+      ),
+
+      // Settings
+      IconButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const SettingScreen(),
+            ),
+          );
+        },
+        icon: const Icon(
+          Icons.settings,
+          color: Colors.white,
+          size: 30,
+        ),
+      ),
+    ],
+  ),
+),                    
                ],
              ),
            ),

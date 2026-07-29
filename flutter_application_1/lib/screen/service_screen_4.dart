@@ -1,4 +1,5 @@
  import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/sign_in_screen.dart';
  
 class  ServiceScreen4  extends StatelessWidget {
   const  ServiceScreen4 ({super.key});
@@ -46,15 +47,25 @@ class  ServiceScreen4  extends StatelessWidget {
             ],
           ),
      
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              CircleAvatar(
-                radius: 20,
-                child: Icon(Icons.arrow_forward),
-              ),
-            ],
+        Row(
+  mainAxisAlignment: MainAxisAlignment.end,
+  children: [
+    InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const  Sign_in(),
           ),
+        );
+      },
+      child: const CircleAvatar(
+        radius: 20,
+        child: Icon(Icons.arrow_forward),
+      ),
+    ),
+  ],
+),
       
            
         ],
