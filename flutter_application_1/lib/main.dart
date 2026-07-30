@@ -1821,6 +1821,7 @@
 //   }
 // }
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/Text_test_screen.dart';
 // import 'package:flutter_application_1/screen/calendar_screen.dart';
 // import 'package:flutter_application_1/screen/task_screen.dart';
 // import 'package:flutter_application_1/screen/home_screen.dart';
@@ -1835,7 +1836,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_application_1/screen/service_screen_3.dart';
 // import 'package:flutter_application_1/screen/service_screen_1.dart';
 // import 'package:flutter_application_1/screen/service_screen_2.dart';
-import 'package:flutter_application_1/screen/splash.dart';
+// import 'package:flutter_application_1/screen/splash.dart';
 // import 'package:flutter_application_1/signup_screen.dart';
 // import 'package:flutter_application_1/screen/flutter_screen.dart';
  
@@ -1880,7 +1881,7 @@ class MyApp extends StatelessWidget {
       // Your(),
       // SignupPage2(),
       // DrawerPage(),
-      Store(),
+      // Store(),
       //  ServiceScreen1(),
       // ServiceScreen2(),
       // ServiceScreen3(),
@@ -1895,6 +1896,7 @@ class MyApp extends StatelessWidget {
       // Task(),
       // SettingScreen(),
       // Calendar(),
+      Custom_Text(),
     );
   }
 }
