@@ -1821,7 +1821,8 @@
 //   }
 // }
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen/Text_test_screen.dart';
+import 'package:flutter_application_1/screen/now.dart';
+// import 'package:flutter_application_1/screen/Text_test_screen.dart';
 // import 'package:flutter_application_1/screen/calendar_screen.dart';
 // import 'package:flutter_application_1/screen/task_screen.dart';
 // import 'package:flutter_application_1/screen/home_screen.dart';
@@ -1896,7 +1897,8 @@ class MyApp extends StatelessWidget {
       // Task(),
       // SettingScreen(),
       // Calendar(),
-      Custom_Text(),
+      // Custom_Text(),
+      Now(),
     );
   }
 }

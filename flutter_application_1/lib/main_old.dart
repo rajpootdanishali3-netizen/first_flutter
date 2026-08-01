@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/main.dart';
 
 void main() {
-  runApp(Cluster());
+  runApp(MyApp());
 }
 
-class Cluster extends StatelessWidget {
-  const Cluster({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp ({super.key});
 
   @override
   Widget build(BuildContext context) {
