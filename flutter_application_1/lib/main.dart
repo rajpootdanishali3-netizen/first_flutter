@@ -1821,7 +1821,9 @@
 //   }
 // }
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screen/now.dart';
+ 
+// import 'package:flutter_application_1/screen/practice_screen.dart';
+// import 'package:flutter_application_1/screen/now.dart';
 // import 'package:flutter_application_1/screen/Text_test_screen.dart';
 // import 'package:flutter_application_1/screen/calendar_screen.dart';
 // import 'package:flutter_application_1/screen/task_screen.dart';
@@ -1831,7 +1833,7 @@ import 'package:flutter_application_1/screen/now.dart';
 // import 'package:flutter_application_1/screen/dialog_2_screen.dart';
 // import 'package:flutter_application_1/screen/dialog_1_screen.dart';
 // import 'package:flutter_application_1/screen/sign_in_screen.dart';
-// import 'package:flutter_application_1/screen/sign_up_screen.dart';
+import 'package:flutter_application_1/screen/sign_up_screen.dart';
 // import 'package:flutter_application_1/screen/service_screen_3.dart';
 // import 'package:flutter_application_1/screen/service_screen_4.dart';
 // import 'package:flutter_application_1/screen/service_screen_3.dart';
@@ -1889,7 +1891,7 @@ class MyApp extends StatelessWidget {
       // ServiceScreen3(),
       // ServiceScreen4(),
       // Sign_in(),
-      // Sign_up(),
+      Sign_up(),
       // Dialog_1(),
       // Dialog_2(),
       // Verify(),
@@ -1898,7 +1900,9 @@ class MyApp extends StatelessWidget {
       // SettingScreen(),
       // Calendar(),
       // Custom_Text(),
-      Now(),
+      // Now(),
+      // PracticeScreen(),
+       
     );
   }
 }

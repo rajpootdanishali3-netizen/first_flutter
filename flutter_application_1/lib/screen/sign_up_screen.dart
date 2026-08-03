@@ -1,7 +1,9 @@
  import 'package:flutter/material.dart';
  import 'package:flutter/gestures.dart';
+import 'package:flutter_application_1/core/theme/widgets/Custom_button_screen.dart';
 import 'package:flutter_application_1/screen/dialog_1_screen.dart';
 import 'package:flutter_application_1/screen/sign_in_screen.dart';
+ 
 //  import 'package:font_awesome_flutter/font_awesome_flutter.dart';
  
 class  Sign_up  extends StatelessWidget {
@@ -162,31 +164,43 @@ TextFormField(
   SizedBox(
   width: double.infinity,
   height: 55,
-  child: ElevatedButton(
-    onPressed: () {
-      Navigator.push(
+  child: AppButton.elevated(
+  title: "Custom Login",
+  onPressed: () {
+       Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => const Dialog_1(),
         ),
       );
-    },
-    style: ElevatedButton.styleFrom(
-      backgroundColor: const Color(0xFF0EA5E9),
-      foregroundColor: Colors.white,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
-    ),
-    child: const Text(
-      "Sign Up",
-      style: TextStyle(
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
-      ),
-    ),
-  ),
+  },
+),
+// ElevatedButton(
+  //   onPressed: () {
+  //     Navigator.push(
+  //       context,
+  //       MaterialPageRoute(
+  //         builder: (context) => const Dialog_1(),
+  //       ),
+  //     );
+  //   },
+  //   style: ElevatedButton.styleFrom(
+  //     backgroundColor: const Color(0xFF0EA5E9),
+  //     foregroundColor: Colors.white,
+  //     shape: RoundedRectangleBorder(
+  //       borderRadius: BorderRadius.circular(12),
+  //     ),
+  //   ),
+  //   child: const Text(
+  //     "Sign Up",
+  //     style: TextStyle(
+  //       fontSize: 18,
+  //       fontWeight: FontWeight.bold,
+  //       color: Colors.white,
+  //     ),
+  //   ),
+  // ),
+// 
 ),
 
 Row(

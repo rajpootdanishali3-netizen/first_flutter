@@ -2,7 +2,7 @@
  
  class AppColourScreen {
   static Color Primary = Color.fromARGB(255, 18, 97, 170);
-  static Color Secondary = Color.fromARGB(255, 0, 245, 212);
+  static Color Secondary = Color.fromARGB(255, 231, 235, 234);
   static Gradient G1 = LinearGradient (
      colors: [
       Primary,
